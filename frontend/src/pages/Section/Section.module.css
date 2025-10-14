@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+.section {
+  margin-bottom: 32px;
+}
+
+/* 🔵 Section Header with indicator + button */
+.sectionheader {
+  background: #4D55CC;
+  color: white;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 10px 10px 0 0;
+  font-family: 'Comfortaa', sans-serif;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerleft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🟢 Green dot indicator */
+.indicatordot {
+  width: 8px;
+  height: 8px;
+  background: rgb(67, 232, 67);
+  border-radius: 50%;
+}
+
+/* ➕ Add button */
+.addbutton {
+  background: white;
+  color: #4D55CC;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.addbutton:hover {
+  background: #e0e0e0;
+}
+
+/* 🟦 Cards grid */
+.cardgrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #BCCCDC;
+  border-radius: 0 0 10px 10px;
+}
+
+/* ⬜ Each card */
+.card {
+  position: relative;
+  background: white;
+  flex: 0 0 calc(33.333% - 8px);
+  height: 96px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cardtitle {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  background-color: #BCCCDC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.emptyState i {
+  font-size: 2.5rem;
+  color: #3c3b3b;
+}
+
+.createButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.createButton:hover {
+  background-color: #45a049;
+}
+
+.cardButtonRow {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.cardButton {
+  position: relative;
+  bottom: 2px;
+  right: 10px;
+  background: #4D55CC;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+}
+
+.cardButton:hover {
+  background: #3942a2;
+}

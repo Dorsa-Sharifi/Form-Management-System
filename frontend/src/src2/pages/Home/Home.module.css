@@ -1,0 +1,36 @@
+/* Ensures the container fits the full viewport width and height */
+.container {
+    min-height: 100vh;  /* Full height of the screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* Full width of the screen */
+    padding: 2rem;
+    background: linear-gradient(to right, #0833d5, #764ba2);
+    color: white;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    word-wrap: break-word;  /* Handles long words */
+    max-width: 100%; /* Prevents text overflow */
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    word-wrap: break-word; /* Handles long words */
+    max-width: 100%;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;  /* Centers the buttons horizontally */
+    flex-wrap: wrap;  /* Allows buttons to wrap on smaller screens */
+}

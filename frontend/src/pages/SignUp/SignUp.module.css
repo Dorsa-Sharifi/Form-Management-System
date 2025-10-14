@@ -1,0 +1,51 @@
+.authBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.authContainer {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e6f7ff, #ffffff);
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #0011a7;
+    opacity: 0.2;
+    border-radius: 50%;
+    filter: blur(600px);
+    animation: float 10s ease-in-out infinite;
+}
+
+.loginForm {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.switch {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.switch a {
+    color: #1677ff;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
